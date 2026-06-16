@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LeetCode Coach</title>
+  <link rel="stylesheet" href="sidebar.css" />
+</head>
+<body>
+  <div id="app">
+    <header id="header">
+      <div id="header-title">
+        <span id="coach-icon">🧑‍🏫</span>
+        <span id="coach-label">Socratic Coach</span>
+      </div>
+      <button id="new-problem-btn" title="Reset conversation">New Problem</button>
+    </header>
+
+    <div id="problem-banner" class="hidden">
+      <span id="problem-title-display"></span>
+      <span id="problem-difficulty-display"></span>
+    </div>
+
+    <div id="messages" aria-live="polite"></div>
+
+    <div id="no-key-warning" class="hidden">
+      ⚠️ No API key set. Click the extension icon to add your Gemini API key.
+    </div>
+
+    <div id="input-area">
+      <textarea
+        id="user-input"
+        placeholder="Type your thoughts..."
+        rows="3"
+        aria-label="Your message"
+      ></textarea>
+      <button id="send-btn">Send</button>
+    </div>
+  </div>
+
+  <script src="sidebar.js"></script>
+</body>
+</html>
